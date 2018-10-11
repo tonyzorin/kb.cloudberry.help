@@ -29,9 +29,7 @@ Downside: When configuring a backup plan in the application currently logged on 
 
 #### What is Local System account? {#what-is-local-system-account}
 
-Local System Account \(Windows\):
-
-[https://msdn.microsoft.com/en-us/library/windows/desktop/ms684190\(v=vs.85\).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684190%28v=vs.85%29.aspx)
+{% embed url="https://msdn.microsoft.com/en-us/library/windows/desktop/ms684190\(v=vs.85\).aspx" %}
 
 According to the article: 
 
