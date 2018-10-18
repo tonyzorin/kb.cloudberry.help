@@ -5,7 +5,7 @@
 After running a backup plan you see the error: **“Warning. One or more backup paths don’t exist”**.  
 
 
-![](.gitbook/assets/image.png)
+![](.gitbook/assets/image%20%282%29.png)
 
 
 
