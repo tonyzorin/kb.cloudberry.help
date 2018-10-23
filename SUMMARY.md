@@ -9,5 +9,9 @@
 
 ## S3 Compatible storage
 
-* [Minio storage on Linux. Quick installation guide.](s3-compatible-storage/minio-storage.-quick-installation-guide..md)
+* [Minio storage on Linux. Quick installation guide.](s3-compatible-storage/minio-storage.-quick-installation-guide.md)
+
+## MICROSOFT AZURE
+
+* [Preparing Azure for Virtual Machine restore](microsoft-azure/preparing-azure-for-virtual-machine-restore.md)
 

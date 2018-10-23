@@ -1,6 +1,6 @@
 # Warning. One or more backup paths do not exist
 
-## 1. Problem {#1-problem}
+## 1. Problem <a id="1-problem"></a>
 
 After running a backup plan you see the error: **“Warning. One or more backup paths don’t exist”**.  
 
@@ -9,17 +9,17 @@ After running a backup plan you see the error: **“Warning. One or more backup 
 
 
 
-## 2. Introduction {#2-introduction}
+## 2. Introduction <a id="2-introduction"></a>
 
 Let's start with the description of services and privileges required for this to work.
 
-#### How it works {#how-it-works}
+#### How it works <a id="how-it-works"></a>
 
 Cloudberry Backup \(or online backup, in case of Cloudberry Managed Backup\) works as a Windows Service and starts up under Local System account.
 
 At the same time Cloudberry Backup agent \(UI\) works under user's privileges who ran the application.
 
-#### Why does that matter? {#why-does-that-matter}
+#### Why does that matter? <a id="why-does-that-matter"></a>
 
 This approach has both, upsides and downsides.
 
@@ -27,7 +27,7 @@ Upside: Backup schedule start backup job/plan even if no users are currently log
 
 Downside: When configuring a backup plan in the application currently logged on users' privileges will be used to browse folders/drives/network shares. Backup agent might not have permissions to access all of the paths specified in the job/plan.
 
-#### What is Local System account? {#what-is-local-system-account}
+#### What is Local System account? <a id="what-is-local-system-account"></a>
 
 {% embed url="https://msdn.microsoft.com/en-us/library/windows/desktop/ms684190\(v=vs.85\).aspx" %}
 
@@ -41,18 +41,18 @@ By default, Local System account has access to all files on a local computer/ser
 
 To make sure that the backup service is running under Local System account you can go to `C:\Windows\System32` and locate the file `services.msc` and double click on it, locate the service and see the account that is used there.
 
-## 3. Which files haven't been backed up? {#how-to-determine-which-paths-are-no-longer-exist}
+## 3. Which files haven't been backed up? <a id="how-to-determine-which-paths-are-no-longer-exist"></a>
 
 * Check your diagnostic information \(log files\). Tools -&gt; Options -&gt; Diagnostic -&gt; Open in Folder and check log-file with some \(almost random\) id. You will find which files/folder backup plan couldn't access.
 * In the agent, on tab “History”, filter by “files” and in the list you’ll find which files have been skipped.
 
-## 4. What do these errors mean? {#4-what-do-these-errors-mean}
+## 4. What do these errors mean? <a id="4-what-do-these-errors-mean"></a>
 
 * `Warning. One or more backup paths don’t exist.`
 
 The resource is not accessible via the network, you need to configure sharing properly.
 
-## 5. Suggestions and Resolution​ {#5-suggestions-and-resolution}
+## 5. Suggestions and Resolution​ <a id="5-suggestions-and-resolution"></a>
 
 Now we need to configure sharing:
 
