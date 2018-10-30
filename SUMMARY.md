@@ -15,3 +15,7 @@
 
 * [Preparing Azure for Virtual Machine restore](microsoft-azure/preparing-azure-for-virtual-machine-restore.md)
 
+## ESXI & HYPER-V
+
+* [VMware permissions for CloudBerry Backup](vmware-esxi-and-ms-hyper-v/vmware-permissions-for-cloudberry-backup.md)
+

@@ -23,7 +23,7 @@ chmod +x mcs.sh		// Make the script executable
   
 2.1 The installation script we previously provided will search for any unfinished/failed Minio installations and delete them automatically.
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
  2.2 You can unmount previously mounted share if you want to mount another share or use local backup destination folder.
 
@@ -50,15 +50,15 @@ They will be installed automatically.
   
 2.3 To point Minio to store data on a NAS or a file server, enter the IP address of that NAS/server. Keep it blank if you would like to use a local folder for Minio storage. Then press Enter.
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
  2.4 On this step you should specify a local backup destination folder. **Steps from 2.5 to 2.8, related to the mounting network share, will be skipped.**
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
  2.5 Specify NAS/File server network share name.
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
  2.6 Enter username and domain name \(you can omit @domain\_name if a user is local\) in format username@domain\_name
 
@@ -82,7 +82,7 @@ They will be installed automatically.
 
  2.11 Enter the secret key for Minio. The secret key requires a minimum of 8 symbols, numbers, and/or special characters for security purposes.
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
  Once you have entered all required information, the script will do the following.
 
@@ -99,7 +99,7 @@ They will be installed automatically.
 3.1 Log in to your MBS panel at [https://mspbackups.com/](https://mspbackups.com/)  
 3.2 Go to Storage &gt; Storage Account &gt; Add account &gt; show more… &gt; Minio
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
  Then you need to attach that storage account to the user. You can find more details at [https://mspbackups.com/Admin/Help.aspx?c=Contents\help\_apply\_storage\_for\_user.html](https://mspbackups.com/Admin/Help.aspx?c=Contents\help_apply_storage_for_user.html)  
   
@@ -145,7 +145,7 @@ sudo mount -a
   
 e. Access denied: need to check the external access to the Minio storage from any other server using HTTPS link in the browser.
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../.gitbook/assets/image%20%2819%29.png)
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
